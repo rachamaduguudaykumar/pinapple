@@ -4,6 +4,7 @@ pipeline {
         stage('git_clone_demo') {
             steps {
                 echo 'Hello world!'
+                git credentialsId: '7175bbf1-850b-4fe3-b6de-f5f97f7a3f96', url: 'https://github.com/rachamaduguudaykumar/pinapple.git'
             }
         }
     stage('Build') {
